@@ -1,0 +1,301 @@
+				Routes	_ file tuan.js
+			
+
+router.get('/tuan', function(req, res, next) {
+  res.render('tuan');
+});
+// router.get('/tuan/cover', function(req, res, next) {
+//   res.render('tuan', { title: 'Express' });
+// });
+
+module.exports = router;
+
+
+				Javascript_ tuan.js
+
+
+
+
+// // Create an object:
+// var person = {
+//     firstName: "John",
+//     lastName : "Doe",
+//     id     : 5566,
+//     fullName : function() {
+//       return this.firstName + " " + this.lastName;
+//     }
+//   };
+  
+//   // Display data from the object:
+//   document.getElementById("mko").innerHTML = person.fullName();
+
+// Create an object:
+
+
+
+// biến có giá trị 
+/*
+var person = {
+    firstName: "pham ",
+    lastName : "tuan123",
+    id     : 5566,
+    fullName : function(){
+        return this.lastName ; 
+    },
+    get tuan(){
+        return this.lastName;
+    },
+    set tuan1(value){
+        this.language = value;
+    } 
+    }
+    person.tuan1="enghwefefngwelknwp"
+
+
+    person.name= function(){
+        return this.firstName + " "+ this.lastName;
+    }
+  
+  // Display data from the object:
+  document.getElementById("demo").innerHTML = person.fullName();
+  document.getElementById("demo").innerHTML = person.name();
+  document.getElementById("demo").innerHTML = person.tuan;
+  document.getElementById("demo").innerHTML = person.language;
+
+
+// biến ko giá trị cụ thể new object 
+
+function tuan(name,age,hand){
+    this.name = name ;
+    this.age = age ; 
+    this.hand = hand;
+    this.dung1= function ( ){ 
+        return this.hand+ " " + this.age;
+    }
+    this.dung23= function (phamtuan123 ){ 
+        this.phamtuan= phamtuan123
+    }
+};
+var  tuan1= new tuan ('tuan1',13,'dung1');
+var  tuan2= new tuan ('tuan2',11,'dung2');
+tuan.dung23("phamtuan1");
+tuan2.poi= function(){
+    return this.name + " " + this.age;
+};
+document.getElementById("demo").innerHTML = tuan1.phamtuan;
+
+
+
+function nga(name,age,ck){
+    this.name = name;
+    this.age = age;
+    this.ck = ck;
+}
+
+nga.prototype.hello1= function (){
+    return this.ck + " tuan dep trai " + this.name;
+}
+
+var  nga1= new nga ('nga1',13,'nga2');
+var  nga123= new nga ('ngqừdefwa4',13,'ng112312edqda3');
+
+document.getElementById("demo").innerHTML = nga123.hello1() ;
+
+
+function tuan(firstname,lastname,age,hand){
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
+    this.hand = hand;
+}
+tuan.prototype.full = function(){
+    return this.age + " "+ this.hand;
+};
+tuan.prototype.fun = "dep trai"
+var tuan1 = new tuan ("pham","Duc","Anh","Tuan");
+document.getElementById("demo").innerHTML = tuan1.full() + " " + tuan1.fun + "tuan dep tưiopfmwemfpwmfpwemgepfjweo[ưefwkenfrai hf;ừpiejfvl";
+*/
+
+function myFunction1() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo1").innerHTML = greeting + " tuan ";
+  }
+
+
+  function myFunction2() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo2").innerHTML = greeting + " tuan phạm";
+  }
+
+
+  function myFunction3() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo3").innerHTML = greeting + " phạm đức anh tuan ";
+  }
+  $(document).ready(function(){
+    $("p").dblclick(function(){
+      $(this).hide();
+    });
+  });
+
+
+				view_ jade _ index.jade
+
+
+
+
+
+
+doctype html
+html.
+  <head>
+     <link rel='stylesheet', href='/stylesheets/style.css'>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+     <link rel="stylesheet" media="screen" href="screen.css" type="text/css" />
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script type="text/javascript" src="/javascripts/tuan.js"></script>
+  </head>
+  <body>
+  <div class='container'>
+      <h4>NGƯỜI VAY - TRẠNG THÁI : <span style="color:red">ĐÃ DUYỆT HẠN MỨC</span></h4>
+  </div>  
+  <div class='container margin_col'>
+      <div class='row no1' >
+        <a href='http://localhost:4000/tuan'class='col-lg-2 btn ' role="button" style='border: 1px solid black; text-align: center' >DS Hồ sơ</a>
+        <a href='http://localhost:4000/tuan'class='col-lg-2 btn ' role="button" style='border: 1px solid black; text-align: center' > Thẩm định</a>
+        <a href='http://localhost:4000/tuan'class='col-lg-2 btn ' role="button" style='border: 1px solid black; text-align: center' >DS HĐ vay</a>
+        <a href='http://localhost:4000/tuan'class='col-lg-2 btn ' role="button" style='border: 1px solid black; text-align: center' >DS lịch trả nợ</a>
+        <a href='http://localhost:4000/tuan'class='col-lg-2 btn ' role="button" style='border: 1px solid black; text-align: center' >DS HĐ cho vay </a>
+      </div>
+    </div>   
+    <div class='container margin_col'>
+    <div class='row no1'>
+        <p class='col-lg-2' style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >TĐ FB</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >LS GD</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Danh bạ</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Lịch sử di chuyển</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Lịch sử Login</a></p>
+      </div>
+    </div>   
+      
+    
+      <div class='container margin_col'>
+      <div class='row no'>
+        <p class='col-lg-2' style='border: 1px solid black; text-align: center; '><a href='http://localhost:4000/tuan' >Lịch sử thiết bị </a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Lịch sử gọi điện</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >TT trùng với TK khác</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >User trùng thiết bị</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Ghi chú</a></p>
+      </div>
+    </div>
+    <div class='container margin_col'>
+      <div class='row no'>
+        <p class='col-lg-2' style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Lịch sử thông báo</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Lịch sử tương tác</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Lịch sử thẩm định</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >GĐ đang xử lý</a></p>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >Tiêu dùng tháng hiện tại</a></p>
+      </div>
+    </div>
+    <div class='container '>
+      <div class='row no'>
+        <span class='col-lg-2 align-middle' style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >DS mã giới thiệu</a></span>
+        <p class='col-lg-2'  style='border: 1px solid black; text-align: center'><a href='http://localhost:4000/tuan' >QL thông tin giới thiệu ƯEF,;ƯLE,FW</a></p>
+      </div>
+    </div>
+  <div class='container'>
+  <div class='d-flex flex-row'>
+    <a style='background-color:red; width:20%' class='btn' role="button">tuan</a>
+    <a style='background-color:blue; width:20%' class='btn' role="button">tuan</a>
+    <a style='background-color:green; width:20%' class='btn' role="button">tuan</a>
+    <a style='background-color:yellow; width:20%' class='btn' role="button">tuan</a>
+    <a style='background-color:violet; width:20%' class='btn' role="button">tuan</a>
+  </div>
+  </div>
+
+
+    <button onclick="myFunction1()" >Try it</button>
+    <p id="demo1" style='color: red'></p>
+    <button onclick="myFunction2()" >Try it</button>
+    <p id="demo2" style='color: blue'></p>
+    <button onclick="myFunction3()" >Try it</button>
+    <p id="demo3" style='color: green'></p>
+
+    <details>
+      <summary>Copyright 1999-2014.</summary>
+      <p> - by Refsnes Data. All Rights Reserved.</p>
+      <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details>
+
+    <script></script>
+  </body>
+ 
+
+				CSS
+
+
+
+/* *{
+  margin:0px;         set margin , padding : 0px; ==> ul =0
+  padding:0px;
+} */
+.no > [class*='col-'] {
+  margin:0;
+  padding:5px 15px
+}
+.no1 > [class*='col-'] {
+  margin:0;
+  padding:15px 15px;
+}
+.a {
+  color: #00B7FF;
+}
+.margin_col{
+  margin:15px;
+}
+.brand{
+  display: flex;
+  float: left;
+}
+body{
+  margin:0;
+  padding:0;
+}
+
+
+
+
+				app.js
+
+var tuanRouter = require('./routes/tuan');
+app.use('/', tuanRouter);
+
+  
+  
+  
+ 

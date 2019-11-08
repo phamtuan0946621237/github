@@ -1,0 +1,176 @@
+
+// // Create an object:
+// var person = {
+//     firstName: "John",
+//     lastName : "Doe",
+//     id     : 5566,
+//     fullName : function() {
+//       return this.firstName + " " + this.lastName;
+//     }
+//   };
+  
+//   // Display data from the object:
+//   document.getElementById("mko").innerHTML = person.fullName();
+
+// Create an object:
+
+
+
+// biến có giá trị 
+/*
+var person = {
+    firstName: "pham ",
+    lastName : "tuan123",
+    id     : 5566,
+    fullName : function(){
+        return this.lastName ; 
+    },
+    get tuan(){
+        return this.lastName;
+    },
+    set tuan1(value){
+        this.language = value;
+    } 
+    }
+    person.tuan1="enghwefefngwelknwp"
+
+
+    person.name= function(){
+        return this.firstName + " "+ this.lastName;
+    }
+  
+  // Display data from the object:
+  document.getElementById("demo").innerHTML = person.fullName();
+  document.getElementById("demo").innerHTML = person.name();
+  document.getElementById("demo").innerHTML = person.tuan;
+  document.getElementById("demo").innerHTML = person.language;
+
+
+// biến ko giá trị cụ thể new object 
+
+function tuan(name,age,hand){
+    this.name = name ;
+    this.age = age ; 
+    this.hand = hand;
+    this.dung1= function ( ){ 
+        return this.hand+ " " + this.age;
+    }
+    this.dung23= function (phamtuan123 ){ 
+        this.phamtuan= phamtuan123
+    }
+};
+var  tuan1= new tuan ('tuan1',13,'dung1');
+var  tuan2= new tuan ('tuan2',11,'dung2');
+tuan.dung23("phamtuan1");
+tuan2.poi= function(){
+    return this.name + " " + this.age;
+};
+document.getElementById("demo").innerHTML = tuan1.phamtuan;
+
+
+
+function nga(name,age,ck){
+    this.name = name;
+    this.age = age;
+    this.ck = ck;
+}
+
+nga.prototype.hello1= function (){
+    return this.ck + " tuan dep trai " + this.name;
+}
+
+var  nga1= new nga ('nga1',13,'nga2');
+var  nga123= new nga ('ngqừdefwa4',13,'ng112312edqda3');
+
+document.getElementById("demo").innerHTML = nga123.hello1() ;
+
+
+function tuan(firstname,lastname,age,hand){
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.age = age;
+    this.hand = hand;
+}
+tuan.prototype.full = function(){
+    return this.age + " "+ this.hand;
+};
+tuan.prototype.fun = "dep trai"
+var tuan1 = new tuan ("pham","Duc","Anh","Tuan");
+document.getElementById("demo").innerHTML = tuan1.full() + " " + tuan1.fun + "tuan dep tưiopfmwemfpwmfpwemgepfjweo[ưefwkenfrai hf;ừpiejfvl";
+*/
+
+function myFunction1() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo1").innerHTML = greeting + " tuan ";
+  }
+
+
+  function myFunction2() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo2").innerHTML = greeting + " tuan phạm";
+  }
+
+
+  function myFunction3() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo3").innerHTML = greeting + " phạm đức anh tuan ";
+  }
+  $(document).ready(function(){
+    $("p").dblclick(function(){
+      $(this).hide();
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

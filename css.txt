@@ -1,0 +1,510 @@
+*{
+    margin:0;
+    padding:0;
+}
+.body{
+    font-family: 'roboto',sans-serif
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+/*thêm vào row
+.row.no-gutters{  
+    margin-left:0;
+    margin-right:0;
+}
+.row.no-gutters >[class^="col-"],
+.row.no-gutters >[class*="col-"]
+{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+*/
+nav{
+width : 100%;
+}
+ul{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    
+}
+ul li a{
+    text-decoration: none;
+}
+.pham1{
+    align-items: center;
+}
+.a1{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 14.4px;
+line-height: 30px;
+letter-spacing: 4px;
+text-transform: uppercase;
+color: #FCFCFC;
+margin-left: 100px;
+
+
+}
+.a2{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 900;
+font-size: 99px;
+line-height: 118px;
+margin-left: 100px;
+}
+
+
+.a3{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #FCFCFC;
+
+margin-top:100px;
+
+}
+.a4{
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 29px;
+color: #FCFCFC;
+
+}
+.a{
+    background-repeat: no-repeat;
+    
+}
+.m1{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 43px;
+letter-spacing: 2px;
+color: #FCFCFC;
+
+}
+
+
+@media  screen and (max-width: 600px) {
+    h1.a2{
+        font-size: 50px;
+        margin-left:0px;
+    }
+    p.a1{
+        margin-left: 0px;
+    }
+}
+@media  screen and (max-width: 984px) {
+    div.a3{
+        margin-left:100px;
+    }
+}
+@media  screen and (max-width: 600px) {
+    div.a3{
+        margin-left:0px;
+    }
+}
+.b1{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #F61067;
+}
+.b2{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 67px;
+color: #30233D;
+margin-top:18px;
+}
+.b3{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 40px;
+color: #30233D;
+margin-top:18px;
+}
+.b4{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 40px;
+color: #30233D;
+}
+.b5{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: normal;
+font-size: 16.2px;
+line-height: 26px;
+color: #776C82;
+margin-top:13px;
+}
+.c1{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #F61067;
+}
+.c2{
+/* Headers/H3 */
+
+font-family: Mplus 1p;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 67px;
+color: #30233D;
+}
+.c3{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.c31{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 40px;
+display: flex;
+align-items: center;
+color: #FCFCFC;
+}
+.c32{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 29px;
+display: flex;
+align-items: center;
+color: #FCFCFC;
+}
+.c4{
+    background-color: #F61067 ; 
+    mix-blend-mode: multiply;
+    background-image: url(tuan/img7.png);
+    background-repeat: no-repeat;
+}
+.c10{
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+}
+.d1{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #F61067;
+}
+.d2{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 67px;
+text-align: center;
+color: #30233D;
+}
+.d3{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 900;
+font-size: 99px;
+line-height: 118px;
+text-align: center;
+color: #F61067;
+}
+.d4{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #30233D;
+margin-top:16px;
+
+}
+.e1{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.e2{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 37px;
+letter-spacing: 4px;
+text-transform: uppercase;
+color: #FCFCFC;
+
+}
+.e3{
+    color:#FCFCFC;
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 850;
+font-size: 20px;
+line-height: 37px;
+letter-spacing: 4px;
+}
+@media  screen and (max-width: 992px) {
+   div.e10{
+        text-align: center;
+   }
+}
+.f1{
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+.f2{
+    margin-top: 118px;
+}
+@media  screen and (max-width: 778px) {
+    div.f2{
+         margin-top:200px;
+    }
+ }
+ @media  screen and (min-width: 375px) {
+    div.f2{
+         margin-top:350px;
+    }
+ }
+ .f3{
+    font-family: Noticia Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 64px;
+    text-align: center;
+    color: #30233D;
+ }
+ .f5{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #F61067;
+ }
+
+ .g1{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    text-align: center;
+    color: #30233D;
+    margin-top:126px;
+    
+ }
+ .g2{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #776C82;
+    margin-top: 23px;
+ }
+ .g31{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #9B94A3;
+
+ }
+.g32{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+display: flex;
+align-items: center;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #F61067;
+margin-bottom: 141px;
+}
+@media  screen and (max-width: 992px) {
+    p.g31{
+         text-align: end;
+    }
+    p.f5{
+        text-align: end;
+    }
+    div.c1{
+        text-align: center;
+    }
+    div.c2{
+        text-align: center;
+    }
+    h4.b1{
+        text-align: center;
+
+    }
+    div.b2{
+        text-align: center;
+
+    }
+ }
+ @media  screen and (max-width: 576px) {
+    p.g31{
+         text-align: center;
+    }
+    p.f5{
+        text-align: center;
+    }
+ }
+
+ @media  screen and (max-width: 575px) {
+    p.g32{
+         justify-content: center;
+    }
+    p.f5{
+        justify-content: center;
+    }
+ }
+
+
+
+.h1{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 43px;
+letter-spacing: 2px;
+color: #FCFCFC;
+}
+.h2{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16.2px;
+    line-height: 26px;
+    color: #FCFCFC;
+margin-top: 17px;
+}
+.h3{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #FCFCFC;
+}
+.h4{
+    font-family: Mplus 1p Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12.6px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #FCFCFC;
+    margin-top: 28px;
+}
+.h5{
+    font-family: Mplus 1p;
+font-style: normal;
+font-weight: 800;
+font-size: 12.6px;
+line-height: 26px;
+letter-spacing: 6px;
+text-transform: uppercase;
+color: #FCFCFC;
+}
+.h6{
+font-family: Mplus 1p;
+font-style: normal;
+font-weight: normal;
+font-size: 16.2px;
+line-height: 26px;
+color: white;
+mix-blend-mode: normal
+}
+@media  screen and (max-width: 992px) {
+    p.f4{
+         justify-content: start;
+    }
+ }
+ .l1{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+    background: #FCFCFC;
+    
+ }
+ .l2{
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    
+ }

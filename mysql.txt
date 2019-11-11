@@ -1,5 +1,5 @@
 			mysql.js < cùng cấp với app.js>
-
+				kết nối mysql với express
 
 var express = require('express');
 var mysql = require('mysql');

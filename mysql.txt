@@ -1,0 +1,40 @@
+var express = require('express');
+var mysql = require('mysql');
+var app = express();
+var connection=mysql.createConnection({
+    host: 'localhost',
+    user: "admin",// xamp : user luôn luôn là admin
+    password:'', // xamp : mk là ko có gì
+    database:'test',
+    
+});
+app.listen(1337);
+  			mysql.js < cùng cấp với app.js>
+
+app.get('/',function(req,resp){
+    connection.query("SELECT * FROM test",function(error,rows,fields){
+        if(!!error){
+            console.log('error in the query');
+        }else{
+            console.log("sucess");
+            console.log(rows);
+            
+        }
+    });
+    connection.query("SELECT * FROM tuan",function(error,rows,fields){
+        if(!!error){
+            console.log('error in the query');
+        }else{
+            console.log("sucess");
+            console.log(rows);
+            
+        }
+    });
+});
+
+
+
+connection.connect(function(error){
+    if(error) console.log('error');
+    else console.log('connected');
+});

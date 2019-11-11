@@ -1,3 +1,6 @@
+			mysql.js < cùng cấp với app.js>
+
+
 var express = require('express');
 var mysql = require('mysql');
 var app = express();
@@ -9,7 +12,7 @@ var connection=mysql.createConnection({
     
 });
 app.listen(1337);
-  			mysql.js < cùng cấp với app.js>
+
 
 app.get('/',function(req,resp){
     connection.query("SELECT * FROM test",function(error,rows,fields){

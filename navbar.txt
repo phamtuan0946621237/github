@@ -1,56 +1,74 @@
-
-doctype html
-html.
-  <head>
-       <link rel='stylesheet', href='/stylesheets/tuan.css'>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
-     <link rel="stylesheet" media="screen" href="screen.css" type="text/css" />
-     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="/javascripts/tuan.js"></script>
-  </head>
-  <body>
-  <div class='jumbotron' style='margin:0; text-align:center'>
+<div class='jumbotron' style='margin:0; text-align:center'>
         <h1 class='b' >PHẠM ĐỨC ANH TUẤN</h1>
         <p>Phạm đức anh tuấn</p>    
     </div>
 
         <nav class='navbar navbar-expand-md navbar-dark bg-dark' style='width:100%'>
             <div class='mx-auto order-0'> 
-            <a class='navbar-brand' style='color:red'>Phamtuan</a>
+            <a class='navbar-brand ' style='color:red'>Phamtuan</a>
             <button class='navbar-toggler' data-toggle='collapse' data-target='#tuan123'>
                  <span class='navbar-toggler-icon '></span>
             </button>
+            
             </div>
             <div class='collapse navbar-collapse' id='tuan123' style='text-align:center' >
+            <ul class="nav navbar-nav navbar-right ">
+                <li>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2 mt-3 w-100" type="search" placeholder="Search" aria-label="Search">
+                        <div class='nav-item'>
+                        <button class="btn btn-outline-success w-100 " type="submit" >Search</button>
+                        </div>
+                    </form>
+                </li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-left ">
+                <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                 <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                 <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                 <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                 <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                 <li>
+                     <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
+                </li>
+                
+            </ul>
             
-            
-            <ul class='nav nav-pills nav-fill navbar-nav ' style='justify-content:space-around ' >
+            <ul class='nav nav-pills nav-fill navbar-nav navbar-left' style='justify-content:space-around ' >
                 <li class='nav-item' style='justify-content:center'>
-                    <a class='nav-link ml-5' href='http://localhost:4000/' > Link1</a>
+                    <a class='nav-link mr-2 mt-3' href='http://localhost:4000/' > Link1</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link ml-5' href='#' > Link2</a>
+                    <a class='nav-link mr-2 mt-3' href='#' > Link2</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link ml-5' href='#' > Link3</a>
+                    <a class='nav-link mr-2 mt-3' href='#' > Link3</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link ml-5' hrnef='#' > Link4</a>
+                    <a class='nav-link mr-2 mt-3' hrnef='#' > Link4</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link ml-5' hrnef='#' > Link5</a>
+                    <a class='nav-link mr-2 mt-3' hrnef='#' > Link5</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link ml-5' hrnef='#' > Link6</a>
+                    <a class='nav-link mr-2 mt-3' hrnef='#' > Link6</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link ml-5' hrnef='#' > Link7</a>
+                    <a class='nav-link mr-2 mt-3' hrnef='#' > Link7</a>
                 </li>
 
             </ul>
@@ -60,91 +78,3 @@ html.
         </nav>
     
   
-   
-
-
-
-
-        <p class='loan '>tuan</p>
-    <ul>
-
-        <li class='a c'>tuan</li>
-        <li>tuan</li>
-        <li>tuan</li>
-    </ul>
-    
-    <div class='container'>
-        <div class='row no'>
-            <button onclick="myFunction2()" class='col-lg-3'>Try it</button>
-            <p id="demo2" style='color: blue' class='col-lg-3'></p>
-            <button onclick="myFunction3()" class='col-lg-3'>Try it</button>
-            <p id="demo3" style='color: red' class='col-lg-3'></p>
-        </div>
-    </div>
-    
-    
-       <div style='background-color:cyan'> 
-        <div id="tuan" >tuan
-        <span id="tuan"  class='navbar-toggler-icon navbar-right' style='text-align: center; background-color: red;width: 5%'></span>
-        </div>
-        <div id='slide' style='display:none'>
-        <div id='tuan2'>tuan2
-            <div id='slide1' style='display:none'>
-            <div>tuan21</div>
-            <div>tuan22</div>
-            <div>tuan23</div>
-            </div>
-        </div>
-        <div>tuan3</div>
-        <div>tuan4</div>
-        </div>    
-        </div> 
-    
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" style='text-align: center'>
-         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Left</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="//codeply.com">Codeply</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-    </div>
-          <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="#">Navbar 2</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Right</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-    </div>
-         </nav>
-
-  </body>
-
-
-
-
-
-
- 
-

@@ -1,0 +1,72 @@
+import React,{useState} from 'react';
+import '../css/Calculator.css';
+import {
+    Redirect
+  } from "react-router-dom";
+  import { Button,Form,Media,Container,Link,Row,Col,ButtonGroup } from 'react-bootstrap';
+  import login from '../Image/login.svg';
+  
+
+
+
+
+function Calculator(props) {
+    const[number1,setNumber1]=useState(0);
+    const[number2,setNumber2]=useState(0);
+    const[result,setResult]=useState(0);
+    function total(){
+        const total= number1 + number2;
+        setResult(total);
+    }
+    function Subtraction(){
+        const Subtraction= number1 - number2;
+        setResult(Subtraction);
+    }
+    function Multiplication(){
+        const Multiplication=number1 * number2;
+        setResult(Multiplication);
+    }
+    function Division(){
+        const Division = number1 / number2;
+        setResult(Division);
+    }
+    function squareroot(){
+        
+        var squareroot = 0
+        if(number1){
+            squareroot = Math.sqrt(number1);
+        }else if(number2){
+            squareroot = Math.sqrt(number2);
+        }else{
+            console.log('deo can')
+        }
+        setResult(squareroot);
+    }
+
+
+  return (
+    <div>
+        <div id='head'>
+        <Form id='form'>
+            <Form.Control type='number' required onChange={(e)=>setNumber1(parseInt(e.target.value))}></Form.Control>
+            <Form.Control type='number' required onChange={(e)=>setNumber2(parseInt(e.target.value))}></Form.Control>
+        </Form>
+        <ButtonGroup id='button' className="mr-2" aria-label="First group">
+            <Button id='button1' onClick={()=>total()}>+</Button>
+            <Button id='button1'onClick={()=>Subtraction()}>-</Button>
+            <Button id='button1' onClick={()=>Multiplication()}>x</Button>
+            <Button id='button1' onClick={()=>Division()}>/</Button>
+            <Button id='button1' onClick={()=>squareroot()}>canba2</Button>
+        </ButtonGroup>
+  <div id='result'>{result}</div>
+        </div>
+
+
+    </div>
+    
+    
+   
+  );
+}
+
+export default Calculator;

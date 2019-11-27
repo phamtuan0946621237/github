@@ -1,0 +1,65 @@
+import React,{ useState,useEffect } from 'react';
+import '../css/girlfiin.css';
+import {
+    Redirect
+  } from "react-router-dom";
+  import { Button,Form,Media,Container,Link,Row,Col,ButtonGroup } from 'react-bootstrap';
+  import login from '../Image/login.svg';
+import { timeout } from 'q';
+  
+
+
+const Girlfiin = props => {
+  const [chuoi,setChuoi] = useState('');
+  const [weight,setWeight] = useState('');
+  const [relation,setRelation] = useState('');
+
+   const girl = [
+       {name :'nhi',kg:'43',relationship:'yes'},
+       {name :'M.a',kg:'60',relationship:'no'},
+       {name:'Hoà',kg:'53',relationship:'yes'},
+       {name:'Hanie',kg:'75',relationship:'no'},
+       {name:'Uyên',kg:'80',relationship:'no'},
+       {name:'Huyền',kg:'42',relationship:'yes'},
+       {name:'Ly',kg:'40',relationship:'yes'},
+       {name:'Quynh',kg:'100',relationship:'no'}
+    ];
+
+      var link ="";
+      var a="";
+      var b="";
+        for(var i=0;i<girl.length;i++){
+            link=link+ girl[i].name + " , " ;
+            if(girl[i].kg>50){
+              a= a + girl[i].name + " , "
+              console.log(a)
+            }
+            if(girl[i].relationship=="yes"){
+              b= b+ girl[i].name + " , "
+              console.log(b)
+            }
+        }
+        console.log('chuoi',link )
+        setTimeout(() => {
+          setChuoi(link);
+          setWeight(a);
+          setRelation(b);
+        }, 1000);
+        
+
+    
+  return (
+    <div> 
+        <div id='#girl'>
+        <div class='one'>{chuoi}</div>
+        <div class='one'>{weight}</div>
+        <div class='one'>{relation}</div>
+        </div>
+    </div>
+    
+    
+   
+  );
+}
+
+export default Girlfiin;

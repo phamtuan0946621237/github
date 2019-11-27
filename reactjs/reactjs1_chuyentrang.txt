@@ -1,0 +1,74 @@
+import React,{useState} from 'react';
+import '../css/login.css';
+import {
+    Redirect
+  } from "react-router-dom";
+  import { Button,Form,Media,Container,Link,Row,Col } from 'react-bootstrap';
+  import login from '../Image/login.svg';
+
+
+
+function Login(props) {
+  const[user,setUser]= useState('');
+  const[pass,setPass]= useState('');
+  
+  function poiUser(q){
+    setUser(q)
+  }
+  function poiPass(q){
+      setPass(q)
+  }
+  function Login(){
+      console.log(user,pass) 
+      if(user === "tuan" && pass === '123'){
+          console.log("okay")
+          props.history.push('/home');
+      }else{
+          console.log("nâu")
+      }
+  }
+  function Logins(){
+    console.log("tuan")
+    props.history.push('/home');
+}
+   
+  return (
+    <div>
+     
+  
+    
+        
+        <div id='one'>
+        <div id='container'>
+          <Form>
+          <Form.Control id='input'placeholder="Số điện thoại" onChange={(e)=>poiUser(e.target.value)}/>
+          <Form.Control id='input' placeholder="Mật khẩu/ PIN" onChange={(e)=>poiPass(e.target.value)}/>
+          </Form>
+          <Row id='row' className="justify-content-md-end">
+            <Col ms lg='2'>
+          <p>Quên mật khẩu</p>
+          </Col>
+          </Row>
+          <Button variant="primary" onClick={()=>Login()}>Đăng nhập</Button>
+          <a href='#'>Tạo tài khoản</a>
+          
+        </div>
+
+        </div>
+        
+
+      
+      
+        
+          
+        
+      
+
+    </div>
+    
+    
+   
+  );
+}
+
+export default Login;
